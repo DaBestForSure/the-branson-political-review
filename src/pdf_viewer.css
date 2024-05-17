@@ -1,0 +1,6 @@
+.Example__container__document {
+    display: flex; /* or grid */
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    height: 100%; /* ensure the container fills its parent */
+}
