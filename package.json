@@ -36,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "i": "^0.3.7",
+    "npm": "^10.8.0",
+    "react-router-dom": "^6.23.1"
   }
 }

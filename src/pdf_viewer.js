@@ -6,8 +6,6 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 
 import "./pdf_viewer.css";
 
-import { PDFDocumentProxy } from "pdfjs-dist";
-
 // pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 //   'pdfjs-dist/build/pdf.worker.min.js',
 //   import.meta.url,
