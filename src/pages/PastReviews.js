@@ -7,7 +7,7 @@ import PDFLoader from '../pdf_viewer.js';
 const PastReviews = () => {
     // Sample data for HoverImages
     const hoverImagesData2024 = [
-        { imageSrc: '/FrontPages/Spring2024.png', title: '2024 Spring BPR', description: 'Friday, May 31st, 2024', path: '/Spring2024.pdf' },
+        { imageSrc: '/FrontPages/Spring2024.png', title: 'Inaugural Edition', description: 'Friday, May 31st, 2024', path: '/Spring2024.pdf' },
         // Add more images as needed
     ];
     const hoverImagesData2025 = [
@@ -26,7 +26,7 @@ const PastReviews = () => {
 
     return (
         <div style={styles.page}>
-            <div styles={styles.yearDivs}>
+            {/* <div styles={styles.yearDivs}>
                 <Headers text="2025" />
                 <div style={styles.hoverImagesContainer}>
                     {hoverImagesData2025.map((imgData, index) => (
@@ -39,7 +39,7 @@ const PastReviews = () => {
                         </button>
                     ))}
                 </div>
-            </div>
+            </div> */}
 
             <Headers text="2024" />
             <div style={styles.hoverImagesContainer}>
