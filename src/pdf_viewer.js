@@ -6,12 +6,6 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 
 import "./pdf_viewer.css";
 
-import { PDFDocumentProxy } from "pdfjs-dist";
-
-// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-//   'pdfjs-dist/build/pdf.worker.min.js',
-//   import.meta.url,
-// ).toString();
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const options = {
@@ -20,11 +14,9 @@ const options = {
 };
 
 const resizeObserverOptions = {};
-
 const maxWidth = 800;
 
-export default function Sample() {
-    const [file, setFile] = useState("/Preview.pdf");
+export default function PDFLoader({ file = "/Spring2024.pdf" }) { // Accept file as a prop
     const [numPages, setNumPages] = useState();
     const [containerRef, setContainerRef] = useState(null);
     const [containerWidth, setContainerWidth] = useState();
@@ -39,16 +31,6 @@ export default function Sample() {
 
     useResizeObserver(containerRef, resizeObserverOptions, onResize);
 
-    function onFileChange(event) {
-        const { files } = event.target;
-
-        const nextFile = files?.[0];
-
-        if (nextFile) {
-            setFile(nextFile);
-        }
-    }
-
     function onDocumentLoadSuccess({ numPages: nextNumPages }) {
         setNumPages(nextNumPages);
     }
@@ -61,7 +43,7 @@ export default function Sample() {
                     ref={setContainerRef}
                 >
                     <Document
-                        file={file}
+                        file={file} // Use the file prop here
                         onLoadSuccess={onDocumentLoadSuccess}
                         options={options}
                     >

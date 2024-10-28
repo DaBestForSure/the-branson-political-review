@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+    width: 262.5px;
+    height: 372px;
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area without distortion */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px); /* Blur effect */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .container:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .text {
+    margin: 0;
+    padding: 10px;
+  }
+  
