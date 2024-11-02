@@ -14,6 +14,14 @@ const PastReviews = () => {
         { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
         { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
         { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
+        { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
+        { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
+        { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
+        { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
+        { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
+        { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
+        { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
+        { imageSrc: '/FrontPages/Spring2024.png', title: 'Fall 2025', description: 'Description 1', path: '/Spring2024.pdf' },
     ];
 
     const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,8 @@
 .Example__container__document {
-    display: flex; /* or grid */
-    justify-content: center; /* horizontally center */
-    align-items: center; /* vertically center */
+    display: flex; /* use flexbox */
+    flex-direction: column; /* stack elements vertically */
+    justify-content: center; /* center items vertically */
+    align-items: center; /* center items horizontally */
     height: 100%; /* ensure the container fills its parent */
 }
 /* Loading Animation Styles */
@@ -13,8 +14,8 @@
 }
 
 .loading-ip {
-    width: 16em;
-    height: 8em;
+    width: 8em;
+    height: 4em;
 }
 
 .loading-ip__track {
