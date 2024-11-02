@@ -18,7 +18,7 @@ const styles = {
     justifyContent: 'left'
   },
   title: {
-    fontWeight: 'bold',
+    fontWeight: '900',
     color: 'black',
     fontSize: '48px',
     margin: '0 0 10px 0', // Set bottom margin for gap

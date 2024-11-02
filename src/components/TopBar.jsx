@@ -39,7 +39,7 @@ const styles = {
   },
   title: {
     fontSize: '26px',
-    fontWeight: 'bold',
+    fontWeight: '900',
     margin: 0,
     background: 'none', // Remove default button background
     border: 'none', // Remove default button border

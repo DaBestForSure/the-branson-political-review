@@ -1,7 +1,7 @@
 import './App.css';
-import TopBar from './components/TopBar'
+import TopBar from './components/TopBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import PastReviews from './pages/PastReviews'
+import PastReviews from './pages/PastReviews';
 import MainContent from './pages/MainContent';
 
 
