@@ -7,7 +7,7 @@ import PDFLoader from '../pdf_viewer.js';
 const PastReviews = () => {
     // Sample data for HoverImages
     const hoverImagesData2024 = [
-        { imageSrc: '/FrontPages/Fall2024.png', title: 'Fall 2024', description: 'Monday, November 4th, 2024', path: '/Greyarea - V 1.pdf' },
+        { imageSrc: '/FrontPages/Fall2024.png', title: 'The Gray Area', description: 'Monday, November 4th, 2024', path: '/Greyarea - V 1.pdf' },
         { imageSrc: '/FrontPages/Spring2024.png', title: 'Inaugural Edition', description: 'Friday, May 31st, 2024', path: '/Spring2024.pdf' },
         
         // Add more images as needed
