@@ -35,7 +35,7 @@ const styles = {
     width: 'calc(100% - 100px)',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     padding: '0 50px',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#f2f2f2',
   },
   title: {
     fontSize: '26px',
@@ -53,7 +53,7 @@ const styles = {
     cursor: 'pointer',
     border: 'none',
     borderRadius: '5px',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#f2f2f2',
     color: '#000000',
     display: 'inline-flex',
     alignItems: 'center',
