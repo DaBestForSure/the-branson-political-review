@@ -5,7 +5,7 @@ import BackToTop from '../components/BackToTop.jsx'; // Ensure to import your Ba
 const MainContent = () => {
   return (
     <div style={{ padding: '20px', marginTop: '10px' }}>
-      <PDFLoader file='/Spring2024.pdf'/>
+      <PDFLoader file='/Greyarea - V 1.pdf'/>
       <BackToTop />
     </div>
   );
