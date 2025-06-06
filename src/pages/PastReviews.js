@@ -13,7 +13,7 @@ const PastReviews = () => {
         // Add more images as needed
     ];
     const hoverImagesData2025 = [
-        { imageSrc: '/FrontPages/Fall2024.png', title: 'Fall 2024', description: 'Monday, November 4th, 2024', path: '/Greyarea - V 1.pdf' },
+        { imageSrc: '/FrontPages/Spring2025.png', title: 'Democratic Dissonance', description: 'Friday, June 6th, 2025', path: '/Spring2025.pdf' },
     ];
 
     const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const PastReviews = () => {
 
     return (
         <div style={styles.page}>
-            {/* <div styles={styles.yearDivs}>
+            <div styles={styles.yearDivs}>
                 <Headers text="2025" />
                 <div style={styles.hoverImagesContainer}>
                     {hoverImagesData2025.map((imgData, index) => (
@@ -39,7 +39,7 @@ const PastReviews = () => {
                         </button>
                     ))}
                 </div>
-            </div> */}
+            </div>
 
             <Headers text="2024" />
             <div style={styles.hoverImagesContainer}>
