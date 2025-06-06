@@ -1,70 +1,89 @@
 .Example__container__document {
+    position: relative;
+    overflow: hidden;
     display: flex; /* use flexbox */
     flex-direction: column; /* stack elements vertically */
-    justify-content: center; /* center items vertically */
+    justify-content: flex-start; /* center items vertically */
     align-items: center; /* center items horizontally */
     height: 100%; /* ensure the container fills its parent */
-}
-/* Loading Animation Styles */
-.loading-container {
-    padding: 1.5em 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 0;
 }
 
-.loading-ip {
-    width: 8em;
-    height: 4em;
+.Example__container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.loading-ip__track {
-    stroke: hsl(223, 90%, 90%);
-    transition: stroke 0.3s;
+.react-pdf__Page {
+    margin: 0px !important;  /* Remove the margin between pages */
 }
 
-.loading-ip__worm1,
-.loading-ip__worm2 {
-    animation: loading-worm1 2s linear infinite;
+/* Optional styling for PDF pages */
+.react-pdf__Page {
+    margin-bottom: 10px;
 }
 
-.loading-ip__worm2 {
-    animation-name: loading-worm2;
+.lds-ellipsis,
+.lds-ellipsis div {
+  box-sizing: border-box;
 }
-
-/* Dark theme for loading animation */
-@media (prefers-color-scheme: dark) {
-    .loading-ip__track {
-        stroke: hsl(0, 0%, 100%);
-    }
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
-
-/* Animation */
-@keyframes loading-worm1 {
-    from {
-        stroke-dashoffset: 0;
-    }
-    50% {
-        animation-timing-function: steps(1);
-        stroke-dashoffset: -358;
-    }
-    50.01% {
-        animation-timing-function: linear;
-        stroke-dashoffset: 358;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+.lds-ellipsis div {
+  position: absolute;
+  top: 33.33333px;
+  width: 13.33333px;
+  height: 13.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
-
-@keyframes loading-worm2 {
-    from {
-        stroke-dashoffset: 358;
-    }
-    50% {
-        stroke-dashoffset: 0;
-    }
-    to {
-        stroke-dashoffset: -358;
-    }
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }
