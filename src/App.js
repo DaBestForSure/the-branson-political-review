@@ -3,7 +3,7 @@ import TopBar from './components/TopBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PastReviews from './pages/PastReviews';
 import MainContent from './pages/MainContent';
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
@@ -17,6 +17,8 @@ function App() {
         </Routes>
     </Router>
       
+    < SpeedInsights />
+    
     </div>
   );
 }

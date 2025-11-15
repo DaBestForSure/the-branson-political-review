@@ -7,7 +7,7 @@ import PDFLoader from '../pdf_viewer.js';
 const PastReviews = () => {
     // Sample data for HoverImages
     const hoverImagesData2024 = [
-            { imageSrc: '/FrontPages/Spring2025.png', title: 'Democratic Dissonance', description: 'Friday, June 6th, 2025', path: '/Spring2025.pdf' },
+        { imageSrc: '/FrontPages/Spring2025.png', title: 'Democratic Dissonance', description: 'Friday, June 6th, 2025', path: '/Spring2025.pdf' },
         { imageSrc: '/FrontPages/Fall2024.png', title: 'The Gray Area', description: 'Monday, November 4th, 2024', path: '/Greyarea - V 1.pdf' },
         { imageSrc: '/FrontPages/Spring2024.png', title: 'Inaugural Edition', description: 'Friday, May 31st, 2024', path: '/Spring2024.pdf' },
         
