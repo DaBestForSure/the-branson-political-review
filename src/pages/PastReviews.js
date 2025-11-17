@@ -11,9 +11,9 @@ const PastReviews = () => {
     ];
     const hoverImagesData2025 = [
         { imageSrc: '/FrontPages/Spring2025.png', title: 'Democratic Dissonance', description: 'Friday, June 6th, 2025', path: '/Spring2025.pdf' },
-        { imageSrc: '/FrontPages/Fall2025.png', title: '"In Conversation"', description: 'Friday, November 14th, 2025', path: '/Fall2025v4.pdf' },
+        { imageSrc: '/FrontPages/Fall2025.png', title: '"In Conversation"', description: 'Friday, November 14th, 2025', path: '/Fall2025.pdf' },
     ];
-    
+
     const [isOpen, setIsOpen] = useState(false);
     const [pathToPDF, setPath] = useState('');
 
