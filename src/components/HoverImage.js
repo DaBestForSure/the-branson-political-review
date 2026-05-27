@@ -9,7 +9,7 @@ const HoverImage = ({ imageSrc, title, description }) => {
       onMouseEnter={() => setIsHovered(true)} // Set hover state to true
       onMouseLeave={() => setIsHovered(false)} // Set hover state to false
     >
-      <img src={imageSrc} alt="Picture of BPR" style={styles.image} />
+      <img src={imageSrc} alt="BPR" style={styles.image} />
       <div style={{ ...styles.overlay, opacity: isHovered ? 1 : 0 }}>
         <div style={styles.gradientDiv}></div>
         <p style={styles.title}>{title}</p>

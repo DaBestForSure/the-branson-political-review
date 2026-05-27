@@ -5,14 +5,13 @@ import './Popup.css'; // Optional: for styling
 const Popup = ({ isOpen, onClose, children }) => {
   const popupRef = useRef();
 
-  // Close popup when clicking outside
-  const handleOutsideClick = (event) => {
-    if (popupRef.current && !popupRef.current.contains(event.target)) {
-      onClose();
-    }
-  };
-
   useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        onClose();
+      }
+    };
+
     if (isOpen) {
       document.addEventListener('mousedown', handleOutsideClick);
     } else {
@@ -22,7 +21,7 @@ const Popup = ({ isOpen, onClose, children }) => {
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick);
     };
-  }, [isOpen]);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 

@@ -63,7 +63,7 @@ export default function PDFLoader({ file = "/Spring2024.pdf" }) {
                                         ? Math.min(containerWidth, maxWidth)
                                         : maxWidth
                                 }
-                                style="margin: 0;"
+                                style={{ margin: 0 }}
                             />
                         ))}
                     </Document>
