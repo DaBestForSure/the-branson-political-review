@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+// fake comment
 const HoverImage = ({ imageSrc, title, description }) => {
   const [isHovered, setIsHovered] = useState(false); // State to track hover
 
@@ -18,7 +18,7 @@ const HoverImage = ({ imageSrc, title, description }) => {
     </div>
   );
 };
-
+ 
 const styles = {
   container: {
     position: 'relative',
